@@ -24,10 +24,20 @@
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body>
-    <img
-      class="background-pattern-desktop"
-      src="./assets/images/background-pattern-desktop.svg"
-    />
+    <picture>
+      <source
+        media="(max-width: 500px)"
+        srcset="./assets/images/background-pattern-mobile.svg"
+      />
+      <source
+        media="(min-width: 501px)"
+        srcset="./assets/images/background-pattern-desktop.svg"
+      />
+      <img
+        class="background-pattern"
+        src="./assets/images/background-pattern-desktop.svg"
+      />
+    </picture>
     <div class="container">
       <div class="heading-container">
         <img
