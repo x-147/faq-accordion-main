@@ -9,6 +9,26 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 16px; /* for rem */
+  position: relative;
+  /* this is what fixed the gap between img and body, */
+  /* note img is not part of document flow anymore with position absolute*/
+  margin: 0;
+  padding: 0;
+}
+
+.background-pattern-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: block; /* removes potential inline element spacing */
+  /* prevents image distortion at 100% width */
+  /* height: auto; */
+  height: 300px;
+  /* without this image displaces towards the
+   center from within its container/frame */
+  object-fit: cover;
 }
 
 .container {
