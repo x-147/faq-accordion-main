@@ -12,54 +12,94 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body>
     <!-- background image -->
-    <div class="heading-container">
-      <img alt="icon-star" />
-      <span>FAQs</span>
-    </div>
+    <div class="container">
+      <div class="heading-container">
+        <img
+          class="icon-star"
+          src="./assets/images/icon-star.svg"
+          alt="icon-star"
+        />
+        <span class="faq">FAQs</span>
+      </div>
 
-    <div class="accordian">
-      <div class="accordian-item">
-        <span>What is Frontend Mentor, and how will it help me?</span>
-        <img alt="icon-plus" />
-        <div class="accordian-content">
-          Frontend Mentor offers realistic coding challenges to help developers
-          improve their frontend coding skills with projects in HTML, CSS, and
-          JavaScript. It's suitable for all levels and ideal for portfolio
-          building.
+      <div class="accordian">
+        <div class="accordian-item">
+          <div class="accordian-item-heading">
+            <span>What is Frontend Mentor, and how will it help me?</span>
+            <img
+              src="./assets/images/icon-minus.svg"
+              class="icon-minus"
+              alt="icon-minus"
+            />
+          </div>
+          <div class="accordian-content">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </div>
+          <hr />
         </div>
-      </div>
-      <div class="accordian-item">
-        <span>Is Frontend Mentor free?</span>
-        <img alt="icon-plus" />
-        <div class="accordian-content">
-          Yes, you can use projects completed on Frontend Mentor in your
-          portfolio. It's an excellent way to showcase your skills to potential
-          employers!
+        <div class="accordian-item">
+          <div class="accordian-item-heading">
+            <span>Is Frontend Mentor free?</span>
+            <img
+              src="./assets/images/icon-minus.svg"
+              class="icon-minus"
+              alt="icon-minus"
+            />
+          </div>
+          <div class="accordian-content">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </div>
         </div>
-      </div>
-      <div class="accordian-item">
-        <span>Can I use Frontend Mentor projects in my portfolio?</span>
-        <img alt="icon-plus" />
-        <div class="accordian-content">
-          Frontend Mentor offers realistic coding challenges to help developers
-          improve their frontend coding skills with projects in HTML, CSS, and
-          JavaScript. It's suitable for all levels and ideal for portfolio
-          building.
+        <hr />
+        <div class="accordian-item">
+          <div class="accordian-item-heading">
+            <span>Can I use Frontend Mentor projects in my portfolio?</span>
+            <img
+              src="./assets/images/icon-minus.svg"
+              class="icon-minus"
+              alt="icon-minus"
+            />
+          </div>
+          <div class="accordian-content">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </div>
         </div>
-      </div>
-      <div class="accordian-item">
-        <span>
-          How can I get help if I'm stuck on a Frontend Mentor challenge?</span
-        >
-        <img alt="icon-plus" />
-        <div class="accordian-content">
-          The best place to get help is inside Frontend Mentor's Discord
-          community. There's a help channel where you can ask questions and seek
-          support from other community members.
+        <hr />
+        <div class="accordian-item">
+          <div class="accordian-item-heading">
+            <span> How can I get help if I'm stuck on a challenge?</span>
+            <img
+              src="./assets/images/icon-minus.svg"
+              class="icon-minus"
+              alt="icon-minus"
+            />
+          </div>
+          <div class="accordian-content">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </div>
         </div>
       </div>
     </div>

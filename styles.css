@@ -1,0 +1,71 @@
+body {
+  min-height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px; /* for rem */
+}
+
+.container {
+  border-radius: 10px;
+  width: 420px;
+  height: 540px;
+  background-color: white;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icon-star {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.faq {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.accordian-item-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordian-item-heading > span {
+  font-weight: 600;
+  font-size: small;
+}
+
+.icon-minus {
+  height: 25px;
+  width: 25px;
+}
+
+.accordian-content {
+  font-size: 12px;
+  margin: 15px 0px;
+  color: hsl(292, 16%, 49%);
+  opacity: 70%;
+  line-height: 1rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #dddddd; /* Light gray */
+  opacity: 50%;
+}
