@@ -14,7 +14,7 @@ body {
 .container {
   border-radius: 10px;
   width: 420px;
-  height: 540px;
+  height: 400px;
   background-color: white;
   padding: 20px 30px;
   display: flex;
@@ -39,13 +39,13 @@ body {
   font-weight: 700;
 }
 
-.accordian-item-heading {
+.accordion-item-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.accordian-item-heading > span {
+.accordion-item-heading > span {
   font-weight: 600;
   font-size: small;
 }
@@ -55,12 +55,19 @@ body {
   width: 25px;
 }
 
-.accordian-content {
+.accordion-content.active {
+  display: block;
+  /* height: 0;
+  overflow: hidden; */
+}
+
+.accordion-content {
   font-size: 12px;
   margin: 15px 0px;
   color: hsl(292, 16%, 49%);
   opacity: 70%;
   line-height: 1rem;
+  display: none;
 }
 
 hr {
