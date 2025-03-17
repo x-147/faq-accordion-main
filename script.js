@@ -2,9 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const accordionHeaders = document.querySelectorAll('.accordion-item-heading')
 
   function toggleAccordion() {
+    const icon = this.querySelector('img')
+
+    // onclick, if current content panel is open, close it
+    if (this.nextElementSibling.classList.contains('active')) {
+      this.nextElementSibling.classList.remove('active')
+      icon.src = './assets/images/icon-plus.svg'
+      return
+    }
+
+    // fetch all content panels
     const allActive = document.querySelectorAll('.accordion-content')
 
-    // close all open accordions
+    // close all content panels that is not sibling
+    // of the current accordion header
     allActive.forEach((item) => {
       if (item != this.nextElementSibling) {
         item.classList.remove('active')
@@ -14,17 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
 
-    // toggle current content panel
-    const content = this.nextElementSibling
-    content.classList.add('active')
-
-    // toggle icon
-    const icon = this.querySelector('img')
-    if (content.classList.contains('active')) {
-      icon.src = './assets/images/icon-minus.svg'
-    } else {
-      icon.src = './assets/images/icon-plus.svg'
-    }
+    // open content panel for current accordion header
+    this.nextElementSibling.classList.add('active')
+    icon.src = './assets/images/icon-minus.svg'
   }
 
   accordionHeaders.forEach((heading) => {
